@@ -1,1 +1,3 @@
-module "go-server"
+module go-server
+
+go 1.14
