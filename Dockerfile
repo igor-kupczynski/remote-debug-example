@@ -1,7 +1,7 @@
 # Build
 FROM golang:1.14 AS build-env
 
-ADD go-server /workspace
+ADD . /workspace
 WORKDIR /workspace
 
 RUN go build -o app

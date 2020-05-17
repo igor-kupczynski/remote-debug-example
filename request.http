@@ -1,1 +1,5 @@
+### Get from the "regular" version
 GET localhost:8080
+
+### Get from the "remote debug" version
+GET localhost:8081
