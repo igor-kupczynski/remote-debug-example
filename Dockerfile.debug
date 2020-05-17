@@ -1,0 +1,21 @@
+# Build
+FROM golang:1.14 AS build-env
+
+RUN go get github.com/go-delve/delve/cmd/dlv
+
+ADD . /workspace
+WORKDIR /workspace
+
+RUN go build -o app -gcflags="all=-N -l"
+
+# Run
+FROM ubuntu:20.04
+
+EXPOSE 8080
+EXPOSE 40000
+
+WORKDIR /
+COPY --from=build-env /go/bin/dlv /
+COPY --from=build-env /workspace/app /app
+
+CMD ["/dlv", "--listen=:40000", "--headless=true", "--api-version=2", "--accept-multiclient", "exec", "/app"]

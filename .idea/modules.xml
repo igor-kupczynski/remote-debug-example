@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/go-server/go-server.iml" filepath="$PROJECT_DIR$/go-server/go-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/remote-debug-example.iml" filepath="$PROJECT_DIR$/.idea/remote-debug-example.iml" />
     </modules>
   </component>
