@@ -49,7 +49,10 @@ You can also add breakpoints, and run the app step-by-step.
 ![Remote debug](./images/remote-debug.png)
 
 
-The screenshots are from Intellij Ultimate with go plugin, but the remote debugger can work with vscode (see [Debugging-Go-code-using-VS-Code.md#remote-debugging][remote-debug-vscode]) and possibly other editors as well.
+The screenshots are from Intellij Ultimate with go plugin, but the remote debugger can work with vscode and possibly other editors as well.
+
+See also [vscode `launch.json` configuration](https://github.com/igor-kupczynski/remote-debug-example/blob/master/.vscode/launch.json) contributed by @cboudereau.
+
 
 
 ## How does the remote debug work exactly?
